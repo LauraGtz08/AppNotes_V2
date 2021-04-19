@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title> App Notes</title>
+        <link rel="stylesheet" href="css/index.css">
+    </head>
+    <body>
+        <!--INSTRUCCIÓN CON EJS: IMPRIMIR UN MENSAJE A TRAVÉS
+        DE LA VARIABLE "MESSAGE" EN LA VISTA HTML-->
+        <%= message %>
+
+        <!--FORMULARIO SIMPLE QUE ENVIARÁ UNA PETICIÓN "POST"-->
+        <form action="/add_note" method="post">
+            <label for="POST-title">Title:</label>
+            <input type="text" name="title">
+            <label for="POST-body">Body:</label>
+            <input type="text" name="body">
+            <input type="submit" value="Crear nota">
+        </form>
+    </body>
+</html>
